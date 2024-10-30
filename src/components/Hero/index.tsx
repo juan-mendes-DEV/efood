@@ -30,13 +30,25 @@ const Hero = ({ textContent, title }: HeroProps) => {
 
   function renderHeaderContent(item: string | undefined) {
     if (item === undefined) {
-      return <Logo kind="link" title="Logo eFood" to="/" cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png" />
+      return (
+        <Logo
+          kind="link"
+          title="Logo eFood"
+          to="/"
+          cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
+        />
+      )
     }
 
     return (
       <HeroHeader>
         <TitleLink to="/">{item}</TitleLink>
-        <Logo kind="link" title="Logo eFood" to="/" cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png" />
+        <Logo
+          kind="link"
+          title="Logo eFood"
+          to="/"
+          cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
+        />
         <Title onClick={handleOpenCart}>
           {items.length} produto(s) no carrinho
         </Title>
