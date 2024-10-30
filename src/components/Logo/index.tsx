@@ -4,11 +4,10 @@ import imgLogo from '../../assets/icons/logo.png'
 type LogoProps = {
   kind: 'image' | 'link'
   title: string
-  cover: string
   to?: string
 }
 
-const Logo = ({ kind, title, cover, to }: LogoProps) => {
+const Logo = ({ kind, title, to }: LogoProps) => {
   if (kind === 'link') {
     return (
       <LogoContainerLink to={to as string}>

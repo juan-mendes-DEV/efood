@@ -30,13 +30,13 @@ const Hero = ({ textContent, title }: HeroProps) => {
 
   function renderHeaderContent(item: string | undefined) {
     if (item === undefined) {
-      return <Logo kind="link" title="Logo eFood" to="/" cover={''} />
+      return <Logo kind="link" title="Logo eFood" to="/" />
     }
 
     return (
       <HeroHeader>
         <TitleLink to="/">{item}</TitleLink>
-        <Logo kind="link" title="Logo eFood" to="/" cover={''} />
+        <Logo kind="link" title="Logo eFood" to="/" />
         <Title onClick={handleOpenCart}>
           {items.length} produto(s) no carrinho
         </Title>
