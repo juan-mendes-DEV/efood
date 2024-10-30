@@ -1,5 +1,5 @@
 import { LogoContainer, LogoContainerLink } from './styles'
-import logo from '../../assets/icons/logo.png'
+import logo from '../../assets/logo.png'
 
 type LogoProps = {
   kind: 'image' | 'link'
