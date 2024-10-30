@@ -1,24 +1,24 @@
 import { LogoContainer, LogoContainerLink } from './styles'
-import logo from '../../assets/logo.png'
 
 type LogoProps = {
   kind: 'image' | 'link'
   title: string
   to?: string
+  cover: string
 }
 
-const Logo = ({ kind, title, to }: LogoProps) => {
+const Logo = ({ kind, title, to, cover }: LogoProps) => {
   if (kind === 'link') {
     return (
       <LogoContainerLink to={to as string}>
-        <img src={logo} alt={title} />
+        <img src={cover} alt={title} />
       </LogoContainerLink>
     )
   }
 
   return (
     <LogoContainer>
-      <img src={logo} alt={title} />
+      <img src={cover} alt={title} />
     </LogoContainer>
   )
 }

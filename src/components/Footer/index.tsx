@@ -5,7 +5,7 @@ import { FooterContainer, SocialIcons, Text } from './styles'
 
 const Footer = () => (
   <FooterContainer>
-    <Logo kind="link" title="Logo eFood" to="/" />
+    <Logo kind="link" title="Logo eFood" to="/" cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png" />
 
     <SocialIcons>
       {SocialLinks.map((item) => (
